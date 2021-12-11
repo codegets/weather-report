@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Weather Report for 3 Cities</h1>
+
+
+      <div class="container main-content">
+        <div class="row">
+          <div class="col-sm" *ngFor="let city of cities">
+           <app-weather [city]="city"></app-weather>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+

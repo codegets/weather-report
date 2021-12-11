@@ -1,0 +1,13 @@
+<article class="widget">
+  <div class="weatherIcon"><img class="weather-icon" [src]="city.current.weather_icons[0]" alt="weather-icon"></div>
+  <div class="weatherInfo">
+    <div class="temperature"><span>{{city.current.temperature}}&deg;</span></div>
+    <div class="description">
+      <div class="weatherCondition"></div>
+      <div class="place"><b>{{city.location.name}}, {{city.location.country}}</b></div>
+    </div>
+  </div>
+  <div class="date">{{city.location.localtime | date : 'dd ,MMM'}}</div>
+</article>
+
+
